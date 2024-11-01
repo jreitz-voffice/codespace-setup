@@ -16,3 +16,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --all --no-update-rc
 npm i -g npm-why
+
+# I hate to do this everytime
+git config --global --add --bool push.autoSetupRemote true
+
