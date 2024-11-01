@@ -1,7 +1,10 @@
 #!/bin/bash
 
+# lets get this machine updated
 sudo apt update
 sudo apt upgrade -y
+
+# All this just for eza?
 sudo apt install -y gpg
 sudo mkdir -p /etc/apt/keyrings
 wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg
@@ -10,9 +13,14 @@ sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.lis
 sudo apt update
 sudo apt install -y eza
 
-cp -f _zshrc ~/.zshrc
-cp -f _p10k.zsh ~/.p10k.zsh
+# Configure zsh
+cp -f .zshrc ~/.zshrc
+cp -f .p10k.zsh ~/.p10k.zsh
+
+# Get theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+#Install fzf for that sweet ctrl+r
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --all --no-update-rc
 npm i -g npm-why
