@@ -20,3 +20,6 @@ npm i -g npm-why
 # I hate to do this everytime
 git config --global --add --bool push.autoSetupRemote true
 
+# workspace config :)
+mkdir -p /workspaces/vofficeGmbh
+cp working.code-workspace /workspaces/vofficeGmbh
