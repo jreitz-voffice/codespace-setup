@@ -122,4 +122,4 @@ source <(fzf --zsh)
 
 alias getrepo="bash /workspaces/codespaces/cloneAndInstallRepo.sh"
 alias fresh="rm -rf node_modules && npm i && npm run copyDevEnv && npm run generateClient"
-alias ls="eza"
+alias ls="eza --icons=always"
