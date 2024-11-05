@@ -119,7 +119,10 @@ source <(fzf --zsh)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+eval "$(zoxide init zsh)"
 
+# alias
 alias getrepo="bash /workspaces/codespaces/cloneAndInstallRepo.sh"
 alias fresh="rm -rf node_modules && npm i && npm run copyDevEnv && npm run generateClient"
 alias ls="eza --icons=always"
+alias cd="z"

@@ -20,9 +20,16 @@ cp -f .p10k.zsh ~/.p10k.zsh
 # Get theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
+
+
 #Install fzf for that sweet ctrl+r
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --all --no-update-rc
+
+# install z as cd alternative
+curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+
+# keep this handy to keep bundles thin
 npm i -g npm-why
 
 # I hate to do this everytime
