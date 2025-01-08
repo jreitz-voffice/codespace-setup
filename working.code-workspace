@@ -1,8 +1,12 @@
 {
 	"folders": [
 		{
+			"path": "../demo-dir",
+			"name": "Demo Dir"
+		},
+		{
 			"path": ".",
-			"name": "Main Workspace"
+			"name": "Workspace Config"
 		}
 	],
 	"extensions": {
